@@ -1,13 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/avatar.webp";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { BiWorld } from "react-icons/bi";
+import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { SiLeetcode, SiCodechef } from "react-icons/si";
 
 function Home2() {
   return (
@@ -19,42 +17,37 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              Hello! I'm Navya Kalla, a passionate <b className="purple">Full Stack Developer</b>.
               <br />
-              <br />I am fluent in classics like
+              <br />
+              I'm skilled in
               <i>
-                <b className="purple"> C++, Javascript and Go. </b>
+                <b className="purple"> HTML, CSS, JavaScript, React.js, and Node.js. </b>
               </i>
+              Additionally, I have hands-on experience with backend technologies like
+              <b className="purple"> Express, MongoDB, and SQLite. </b>
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              My interests lie in creating innovative web technologies and solutions, particularly in
+              <b className="purple"> e-commerce platforms and user-focused applications.</b>
+              <br />
+              <br />
+              I've contributed to projects like{" "}
               <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Blockchain.
-                </b>
+                <b className="purple">Nxt Trendz</b> (an Amazon/Flipkart clone) and <b className="purple">TechRitz</b>.
               </i>
-              <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
+              Whenever possible, I love diving deep into
+              <b className="purple"> full-stack development</b> to bring ideas to life.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img
+                src={myImg}
+                className="img-fluid rounded-circle"
+                alt="avatar"
+                style={{ width: "300px", height: "300px", objectFit: "cover" }}
+              />
             </Tilt>
           </Col>
         </Row>
@@ -67,7 +60,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/navya1220"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -77,17 +70,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/navya-kalla/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -97,12 +80,32 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href="https://codolio.com/profile/NavyaKalla"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
-                  <AiFillInstagram />
+                  <BiWorld />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://leetcode.com/u/navya-kalla/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <SiLeetcode />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://www.codechef.com/users/navya1220"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <SiCodechef />
                 </a>
               </li>
             </ul>
@@ -112,4 +115,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;
