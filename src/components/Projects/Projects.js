@@ -6,6 +6,7 @@ import collegeguru from '../../Assets/Projects/collegeguru.png';
 import BookStore from '../../Assets/Projects/bookstore.png';
 import nxttrendz from '../../Assets/Projects/nxttrendz.png';
 import techritz from '../../Assets/Projects/techritz.png'
+import Placement from '../../Assets/Projects/placement.png'
 
 function Projects() {
   return (
@@ -19,6 +20,22 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Placement}
+              isBlog={false}
+              title="Placement Portal for College"
+              description="Description: Developed a comprehensive placement portal catering to four distinct user roles: Admin, Employee, Alumni, and Student, each with customized features and access control.
+Key Features:
+Admin: Manage user roles, monitor job postings, oversee portal activity, and generate analytics.
+Employee: Post job opportunities, track applications, and manage recruitment processes.
+Alumni: Share success stories, provide career advice, and engage with current students.
+Student: Access job updates, interact with a chatbot for career guidance, take mock tests, evaluate resumes with an ATS scoring system, stay informed about the latest industry trends, and read inspiring alumni stories.
+"
+              ghLink="https://github.com/navya1220/placement-portal-backend"
+              demoLink="https://placement-portal-zeta.vercel.app/"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={BookStore}
