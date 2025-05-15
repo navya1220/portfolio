@@ -7,6 +7,7 @@ import BookStore from '../../Assets/Projects/bookstore.png';
 import nxttrendz from '../../Assets/Projects/nxttrendz.png';
 import techritz from '../../Assets/Projects/techritz.png'
 import Placement from '../../Assets/Projects/placement.png'
+import atlas from '../../Assets/Projects/atlas.png'
 
 function Projects() {
   return (
@@ -34,6 +35,16 @@ Student: Access job updates, interact with a chatbot for career guidance, take m
 "
               ghLink="https://github.com/navya1220/placement-portal-backend"
               demoLink="https://placement-portal-zeta.vercel.app/"
+            />
+          </Col>
+           <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={atlas}
+              isBlog={false}
+              title="Academic Atlas"
+              description="Solved real-world problems by enabling 150+ users to securely store and access academic resources. Both Frontend and backend development using React Js, Node Js, Mongo DB"
+              ghLink="https://github.com/nazeer-18/Academic-Atlas/tree/navya"
+              demoLink="https://academic-atlas-asc.netlify.app/login"
             />
           </Col>
           <Col md={4} className="project-card">
